@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AsyncDemo.Server.Core\AsyncDemo.Server.Core.csproj">
+      <Project>{3446bbe0-5994-422a-b201-215c46e9a3da}</Project>
+      <Name>AsyncDemo.Server.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AsyncDemo.Shared\AsyncDemo.Shared.csproj">
+      <Project>{ad9e9791-aea2-4d32-9306-2e1463d05c1b}</Project>
+      <Name>AsyncDemo.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

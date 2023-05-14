@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace AsyncDemo.Shared
 {
-    public class Class1
+    public class Consts
     {
+        public const int PORT = 4711;
     }
 }

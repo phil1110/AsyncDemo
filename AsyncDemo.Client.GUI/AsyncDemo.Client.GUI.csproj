@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AsyncDemo.Client.Core\AsyncDemo.Client.Core.csproj">
+      <Project>{5e8bd0a9-a498-4187-8c10-446c500b2c52}</Project>
+      <Name>AsyncDemo.Client.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AsyncDemo.Shared\AsyncDemo.Shared.csproj">
+      <Project>{ad9e9791-aea2-4d32-9306-2e1463d05c1b}</Project>
+      <Name>AsyncDemo.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
